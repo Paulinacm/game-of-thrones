@@ -4,7 +4,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-}
+} 
 
 /*HEADER*/
 
@@ -23,7 +23,7 @@ header {
     display: flex;
     margin: 0px 0px 0px 0px;
     width: 100%;
-    position: fixed;
+    position: ;
     background: #68675794;
 }
 
@@ -47,7 +47,7 @@ nav li a {
     color: white;
 }
 
-nav li:hover {
+ nav li:hover {
     color: silver;
     transform: scale(1.1);
-} */
+}  

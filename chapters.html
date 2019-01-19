@@ -24,14 +24,36 @@
     </div>
     <nav>
       <ul>
-        <li><a href="index.html">Go to Characters</a></li>
-        <li><a href="chapters.html">Go to Episodes</a></li>
+        <li><a href="#characters">Go to Characters</a></li>
+        <li><a href="#seasons">Go to Seasons</a></li>
       </ul>
     </nav>
   </header>
   </section>
   <!--DIV INICIAL CONTIENE TODAS LAS COLUMNAS-->
   <div class="container-fluid">
+    <!-- SECCION MENU -->
+    <ul>
+      <div class="menu col-sm-12 color4">
+        <!--  sección filtrar y ordenar  -->
+        <div class="input input-group">
+          <!--  sección filtrar-->
+          <div class="filter col-5 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <select class="form-control" id="filterType">
+              <option value="" selected>Filter by Season</option>
+              <option value="season1">Season 1</option>
+              <option value="season2">Season 2</option>
+              <option value="season3">Season 3</option>
+              <option value="season4">Season 4</option>
+              <option value="season1">Season 5</option>
+              <option value="season2">Season 6</option>
+              <option value="season3">Season 7</option>
+              <option value="season4">Season 8</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </ul>
     <!--SECCION CUERPO -->
     <div class="row">
       <!-- seccion izquierda -->
@@ -40,7 +62,7 @@
       <div class="central col-12   col-sm-12          col-md-10   col-lg-10  col-xl-10    color2">
         <div class="" id="got">
           <div class="games_list row"></div>
-          <div class="got" id="allgot"></div>
+          <div class="got" id="allepi"></div>
         </div>
       </div>
       <!-- seccion derecha -->
