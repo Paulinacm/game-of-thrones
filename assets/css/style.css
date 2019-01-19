@@ -9,14 +9,12 @@
 /*HEADER*/
 
 #logo img {
-    width: 90px;
-    margin: 5px;
-    transition: .5s
+    width: 200px;
+    margin: 15px;
+   border-radius: 30%;
 }
 
-#logo img:hover {
-    transform: scale(1.1);
-}
+
 
 header {
     align-self: flex-end;
@@ -24,7 +22,7 @@ header {
     margin: 0px 0px 0px 0px;
     width: 100%;
     position: ;
-    background: #68675794;
+    background: #f7f6eff1;
 }
 
 nav ul {
@@ -44,7 +42,7 @@ nav li {
 nav li,
 nav li a {
     text-decoration: none;
-    color: white;
+    color: rgb(19, 13, 13);
 }
 
  nav li:hover {
