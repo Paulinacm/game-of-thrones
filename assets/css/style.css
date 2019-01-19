@@ -1,0 +1,53 @@
+ #full-parallex {
+    background: white
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/*HEADER*/
+
+#logo img {
+    width: 90px;
+    margin: 5px;
+    transition: .5s
+}
+
+#logo img:hover {
+    transform: scale(1.1);
+}
+
+header {
+    align-self: flex-end;
+    display: flex;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    position: fixed;
+    background: #68675794;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 20px;
+    margin: auto;
+    font-size: 1.2em;
+    transform: .5s;
+
+}
+
+nav li,
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li:hover {
+    color: silver;
+    transform: scale(1.1);
+} */

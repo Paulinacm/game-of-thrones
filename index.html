@@ -1,16 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>GOT</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+<link rel="stylesheet" href="./assets/css/style.css">
 </head>
+<!--  BODY  -->
 <body>
-  
-  <script src="./assets/data/data.js"></script>
-  <script src="./assets/js/app.js"></script>
-  <script src="./assets/js/main.js"></script>
+<!-- SECCION HEADER PORTADA -->
+<div class="text-center">
+  <img src="https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/series_logos_game-of-thrones.jpg/_jcr_content/renditions/original"
+    class="img-fluid" alt="Image game of throne">
+</div>
+<!--SECCION NAVEGADOR-->
+<section id="full-parallex">
+  <header>
+    <div id="logo">
+      <img src="http://www.pngmart.com/files/4/Game-of-Thrones-PNG-HD.png">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#characters">Characters</a></li>
+        <li><a href="#seasons">Seasons</a></li>
+      </ul>
+    </nav>
+  </header>
+  </section>
+  <!--DIV INICIAL CONTIENE TODAS LAS COLUMNAS-->
+  <div class="container-fluid">
+    <!-- SECCION MENU -->
+    <ul>
+      <div class="menu col-sm-12 color4">
+        <!--  sección filtrar y ordenar  -->
+        <div class="input input-group">
+          <!--  sección filtrar-->
+          <div class="filter col-5 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <select class="form-control" id="filterType">
+              <option value="" selected>Filter by Type</option>
+              <option value="Bug">Bug</option>
+              <option value="Dragon">Dragon</option>
+              <option value="Electric">Electric</option>
+              <option value="Fighting">Fighting</option>
+            </select>
+          </div>
+          <!--  sección ordenar -->
+          <div class="ordenar col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <select class="form-control" id="sort">
+              <option value="ascending">Sort by: 001 - 151</option>
+              <option value="descending">Sort by: 151 - 001</option>
+              <option value="nameaz">Sort by: A-Z</option>
+              <option value="nameza">Sort by: Z-A</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </ul>
+    <!--SECCION CUERPO -->
+    <div class="row">
+      <!-- seccion izquierda -->
+      <div class="d-none d--block  d-none d-sm-block  col-md-1    col-lg-1   col-xl-1    color3"></div>
+      <!-- seccion central-->
+      <div class="central col-12   col-sm-12          col-md-10   col-lg-10  col-xl-10    color2">
+        <div class="" id="got">
+          <div class="games_list row"></div>
+          <div class="got" id="allgot"></div>
+        </div>
+      </div>
+      <!-- seccion derecha -->
+      <div class="d-none d--block  d-none d-sm-block  col-md-1     col-lg-1  col-xl-1    color3"></div>
+    </div>
+    <div id="chart_div"></div>
+    <!-----  SECCION FOOTER ----->
+    <div class="footer color4">
+      2018
+      <hr>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="./assets/data/data.js"></script>
+<script src="./assets/js/app.js"></script>
+<script src="./assets/js/main.js"></script>
 </body>
+
 </html>
