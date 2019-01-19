@@ -5,24 +5,23 @@
  */
 const data = DATA.characters;
 //console.log(data)
-
+const containerRoot = document.getElementById('root');
 
 let arrCharacter = [];
 
- //CARD PARA VER PERSONAJES
+// CARD PARA VER PERSONAJES
  const showData = (data) => {
      let result = '';
      //console.log(data)
-     for (let i = 0; i < data.length; i++) {
-         document.getElementById("allgot").innerHTML += `
+     data.forEach(element => {
+         result = containerRoot.innerHTML += `
           <div class = "card" style = "width: 18rem;"> 
-          <img class = "card-img-top" src = ${data[i].characterImageFull} alt = "Card image cap" >
+          <img class = "card-img-top" src = ${element.characterImageFull} alt = "Card image cap" >
           <div class = "card-body">
-              <h5 class = "card-title"> ${data[i].characterName} </h5> 
-              <p class = "card-text"> House: ${data[i].houseName} </p>
-              </div>`         
-     }
+              <h5 class = "card-title"> ${element.characterName} </h5> 
+              <p class = "card-text"> House: ${element.houseName} </p>
+              </div>`
+     });
      return result;
- };
+ }
  window.onload = showData(data);
-
