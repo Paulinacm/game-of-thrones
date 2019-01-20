@@ -11,4 +11,11 @@
  2.2 El usuario debe poder filtrar en esta pantalla los capítulos ** por temporada ** .
  */
 
+//console.table(data)
 
+const filterSeason = (data, condition) => {
+    const filteredSeason = data.filter(element => {
+        return element.seasonNum === condition
+    })
+    return filteredSeason;
+};
