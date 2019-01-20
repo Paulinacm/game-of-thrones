@@ -21,7 +21,7 @@ console.log(selectSeason)
     dataep.forEach(element => 
             result = containerRoot.innerHTML += `
        <div class = "col-6 col-md-2">
-       <div class = "card-w-100 mb-3 p-0">
+       <div class = "card w-100 mb-3 p-0">
            <p class = "card-text"> Temporada ${element.seasonNum} Episodio ${element.episodeNum} </p> 
        <h5 class = "card-title"> ${element.episodeTitle} </h5>  
        <p class = "card-text"> Descripción: ${element.episodeDescription} </p> 
