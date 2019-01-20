@@ -8,8 +8,8 @@
 
 /* imagen principal */
 .img-fluid {
-    max-width: 60%;
-    height: auto;
+    max-width: auto;
+    height: 200px;
     padding: 20px;
 }
 
@@ -96,35 +96,9 @@ nav li a {
      color: #363030;
  }
 
- /* .card {
-     width: 200px;
-     height: 235px;
-     margin: 2rem;
-     background-color: rgba(230, 230, 231, 0.123);
-     -webkit-transition: -webkit-box-shadow .25s;
-     transition: -webkit-box-shadow .25s;
-     transition: box-shadow .25s;
-     transition: box-shadow .25s, -webkit-box-shadow .25s;
-     border-radius: 20px;
-     text-align: center;
 
- }
-
- .card .card-content .card-title {
-     display: block;
-     line-height: 32px;
-     margin-bottom: 0px;
-     font-size: 15px;
-
- }
-
- .card-img-top {
-     border-radius: 20px 20px 0px 0px;
-
- }
 
  /*imagen1*/
-
  .card .card-text {
      padding: 15px 25px;
      align-self: center;
@@ -133,3 +107,8 @@ nav li a {
      align-content: flex-end;
      justify-content: center;
  } 
+
+ .nav-pills {
+     padding: 50px
+ }
+
