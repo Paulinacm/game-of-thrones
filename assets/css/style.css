@@ -6,12 +6,7 @@
     flex-direction: column;
 } 
 
-/*CONTENEDOR DE TODO, HEADER, MENU, BODY, FOOTER*/
-.container-fluid {
-    padding-right: 0px;
-    padding-left: 0px;
-    flex-wrap: wrap;
-}
+
 
 /*HEADER*/
 #logo img {
@@ -55,7 +50,7 @@ nav li a {
 }  
 
  /*TARJETA CARD*/
- .card {
+ /* .card {
      width: auto;
      height: auto;
      background: #fff;
@@ -69,7 +64,7 @@ nav li a {
  .games_list {
      display: flex;
      justify-content: center;
- }
+ } */
 
  /*FOOTER*/
  .footer {
@@ -77,3 +72,41 @@ nav li a {
      text-align: center;
      color: #363030;
  }
+
+ /* .card {
+     width: 200px;
+     height: 235px;
+     margin: 2rem;
+     background-color: rgba(230, 230, 231, 0.123);
+     -webkit-transition: -webkit-box-shadow .25s;
+     transition: -webkit-box-shadow .25s;
+     transition: box-shadow .25s;
+     transition: box-shadow .25s, -webkit-box-shadow .25s;
+     border-radius: 20px;
+     text-align: center;
+
+ }
+
+ .card .card-content .card-title {
+     display: block;
+     line-height: 32px;
+     margin-bottom: 0px;
+     font-size: 15px;
+
+ }
+
+ .card-img-top {
+     border-radius: 20px 20px 0px 0px;
+
+ }
+
+ /*imagen1*/
+
+ .card .card-text {
+     padding: 15px 25px;
+     align-self: center;
+     align-items: center;
+     display: flex;
+     align-content: flex-end;
+     justify-content: center;
+ } */
