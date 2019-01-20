@@ -19,11 +19,12 @@ const selectSeason = document.getElementById("filterSeason1");
      //console.log(dataep)
     dataep.forEach(element => 
             result = containerRoot.innerHTML += `
-       <div class = "card" style = "width: 18rem;" >
+       <div class = "card" style = "width: 18rem;">
            <div class = "card-body">
-           <h5 class = "card-title"> ${element.episodeTitle} </h5>
-           <p class = "card-text"> Temporada: ${element.seasonNum} </p>
-           <p class = "card-text"> Description: ${element.episodeDescription} </p> </div>
+           <p class = "card-text"> Temporada ${element.seasonNum} Episodio ${element.episodeNum} </p> 
+       <h5 class = "card-title"> ${element.episodeTitle} </h5>  
+       <p class = "card-text"> Descripción: ${element.episodeDescription} </p> 
+       </div>
        `
           )
           return result;
@@ -31,9 +32,10 @@ const selectSeason = document.getElementById("filterSeason1");
 
 selectSeason.addEventListener('change', () => {
     let condition = selectSeason.options[selectSeason.selectedIndex].text;
+    console.log(selectedIndex)
     let filtered = filterSeason(dataep, condition);
     console.log(filtered)
-    //console.log(condition)
+    console.log(condition)
     // limpio div
     containerRoot.innerHTML = '';
 
@@ -41,10 +43,9 @@ selectSeason.addEventListener('change', () => {
         containerRoot.innerHTML += `
    <div class = "card" style = "width: 18rem;" >
        <div class = "card-body">
+       <p class = "card-text"> Temporada ${element.seasonNum} Episodio ${element.episodeNum} </p>
        <h5 class = "card-title"> ${element.episodeTitle} </h5> 
-       <p class = "card-text"> Temporada: ${element.seasonNum} </p> 
-       <p class = "card-text"> Descripción: ${element.episodeDescription} </p> </div> `
-    
+       <p class = "card-text"> Descripción: ${element.episodeDescription} </p> </div>`
         })
         })
     window.onload = showDataep(dataep)
