@@ -5,8 +5,9 @@
  */
 
 const dataep = EPISODES.episodes;
-const containerRoot = document.getElementById("root2");
+const containerRoot = document.querySelector ("#root2 .row");
 const selectSeason = document.getElementById("filterSeason1");
+console.log(selectSeason)
 //console.log(selectSeason)
 
 
@@ -19,8 +20,8 @@ const selectSeason = document.getElementById("filterSeason1");
      //console.log(dataep)
     dataep.forEach(element => 
             result = containerRoot.innerHTML += `
-       <div class = "card" style = "width: 18rem;">
-           <div class = "card-body">
+       <div class = "col-6 col-md-2">
+       <div class = "card-w-100 mb-3 p-0">
            <p class = "card-text"> Temporada ${element.seasonNum} Episodio ${element.episodeNum} </p> 
        <h5 class = "card-title"> ${element.episodeTitle} </h5>  
        <p class = "card-text"> Descripción: ${element.episodeDescription} </p> 
@@ -39,11 +40,13 @@ selectSeason.addEventListener('change', () => {
 
     filtered.forEach(element => {
         containerRoot.innerHTML += `
-   <div class = "card" style = "width: 18rem;" >
-       <div class = "card-body">
+   <div class = "col-6 col-md-2" >
+       <div class = "card-w-100 mb-3 p-0">
        <p class = "card-text"> Temporada ${element.seasonNum} Episodio ${element.episodeNum} </p>
        <h5 class = "card-title"> ${element.episodeTitle} </h5> 
        <p class = "card-text"> Descripción: ${element.episodeDescription} </p> </div>`
         })
         })
     window.onload = showDataep(dataep)
+
+
