@@ -15,7 +15,7 @@
 
 const filterSeason = (data, condition) => {
     const filteredSeason = data.filter(element => {
-        return element.seasonNum === condition
+        return element.seasonNum === parseInt(condition)
     })
     return filteredSeason;
 };

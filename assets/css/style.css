@@ -1,20 +1,41 @@
  #full-parallex {
-    background: white
+    background: white;
     height: 100vh;
     color: white;
     display: flex;
     flex-direction: column;
 } 
 
+/* imagen principal */
+.img-fluid {
+    max-width: 60%;
+    height: auto;
+    padding: 20px;
+}
+
 p, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif
+}
+
+p {
+    font-size: 11xp;
+    color: rgb(64, 64, 64);
+    margin-right: 0px;
+    margin-top: 7px;
+    text-align: left;
+    text-size-adjust: 100%;
+}
+
+h5 {
+    font-size: 18xp;
+    color: rgb(64, 64, 64)
 }
 
 /*HEADER*/
 #logo img {
     width: 200px;
     margin: 15px;
-   border-radius: 30%;
+    border-radius: 30%;
 }
 
 header {
@@ -22,8 +43,7 @@ header {
     display: flex;
     margin: 0px 0px 0px 0px;
     width: 100%;
-    position: ;
-    background: #f7f6eff1;
+    background: white;
 }
 
 nav ul {
@@ -52,7 +72,7 @@ nav li a {
 }  
 
  /*TARJETA CARD*/
- /* .card {
+.card {
      width: auto;
      height: auto;
      background: #fff;
@@ -60,13 +80,14 @@ nav li a {
      border-radius: 1em;
      border-color: rgb(63, 54, 54);
      text-align: center;
+     padding: 5px
  }
 
  /*AJUSTAR CARD GOT*/
  .games_list {
      display: flex;
      justify-content: center;
- } */
+ } 
 
  /*FOOTER*/
  .footer {
@@ -111,4 +132,4 @@ nav li a {
      display: flex;
      align-content: flex-end;
      justify-content: center;
- } */
+ } 

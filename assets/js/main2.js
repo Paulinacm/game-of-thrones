@@ -31,11 +31,9 @@ const selectSeason = document.getElementById("filterSeason1");
           }
 
 selectSeason.addEventListener('change', () => {
-    let condition = selectSeason.options[selectSeason.selectedIndex].text;
-    console.log(selectedIndex)
+    let condition = selectSeason.value;
     let filtered = filterSeason(dataep, condition);
-    console.log(filtered)
-    console.log(condition)
+
     // limpio div
     containerRoot.innerHTML = '';
 
